@@ -1,0 +1,126 @@
+$colour-gradient:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-color: #F6F6F6;
+}  
+
+.logo{
+    text-align: center;
+}
+
+.location{
+    background-color:#EAEAEA;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.head{
+    text-align: center;
+    font-size: 16px;
+    #target{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    button{
+        background: $colour-gradient;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        width: 218px;
+        height: 50px;
+    }
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+}
+
+nav{
+    background: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    height:440px;
+    ul{
+        padding-left: 20px;
+        padding-right: 20px;
+        list-style:none;
+    }
+    li{
+        background: #F7F7F7;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        text-align:center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+         padding-top: 36px;
+         padding-bottom: 36px;
+         margin-bottom: 25px;
+        .fa-solid{
+            padding-right: 27px;
+            padding-left: 23px;
+        }
+}
+}
+.cards{
+    padding: 0px 20px;
+    img{
+        border-radius: 15px 15px 0px 0px;
+        height: 231px;
+        width: 100%;
+    }
+    .card{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+}
+.card-content{
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    padding-top: 16px;
+    h3{
+        margin: 0px;
+        padding-left: 23px;
+        padding-bottom: 5px;
+        font-size: 18px; 
+        font-weight: 700; 
+    }
+    p{
+        margin: 0px;
+        padding-left: 23px;
+        padding-bottom: 12px;
+        font-size: 17px;
+        font-weight: 300;
+    }
+
+    i{
+        font-size: 21px;
+        text-align: end;
+        padding-right: 25px;
+    }
+}
+
+footer{
+    background: #353535;
+    color: white;
+    padding-left: 25px;
+    margin-top: 64px;
+    padding-top: 22px;
+    padding-bottom: 33px;
+    h1{
+        font-size: 18px;
+        font-weight:lighter;
+        line-height: 26px;
+    }
+    i{
+        padding-right: 10px;
+    }
+}
