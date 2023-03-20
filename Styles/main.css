@@ -6,30 +6,48 @@ body {
 
 .logo {
   text-align: center;
+  background-color: white;
+  padding-top: 14px;
+  padding-bottom: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
 }
 
 .location {
   background-color: #EAEAEA;
   text-align: center;
-  font-size: 16px;
-  line-height: 19px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+}
+.location .fa-location-dot {
+  padding-right: 17px;
 }
 
 .head {
   text-align: center;
-  font-size: 16px;
+  padding-top: 39px;
+  padding-bottom: 57px;
 }
 .head #target {
   font-size: 24px;
   font-weight: 700;
-  line-height: 22px;
+  padding-left: 42px;
+  padding-right: 53px;
+}
+.head p {
+  font-weight: 300;
+  font-size: 18px;
 }
 .head button {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
+  border: none;
   width: 218px;
   height: 50px;
+  color: white;
+  margin-top: 27px;
 }
 
 h1 {
@@ -38,11 +56,22 @@ h1 {
 
 nav {
   background: white;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
   height: 440px;
+  padding-top: 48px;
+  padding-left: 20px;
+}
+nav .number {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  background: #9356DC;
+  color: white;
+  font-size: 14px;
+  border: 1px solid #9356DC;
+  border-radius: 100px;
+  top: 45px;
+  right: 10px;
 }
 nav ul {
   padding-left: 20px;
@@ -58,8 +87,8 @@ nav li {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   margin-bottom: 25px;
 }
 nav li .fa-solid {
@@ -69,6 +98,17 @@ nav li .fa-solid {
 
 .cards {
   padding: 0px 20px;
+}
+.cards .new {
+  position: absolute;
+  text-align: center;
+  width: 80px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #008766;
+  background: #99E2D0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
 }
 .cards img {
   border-radius: 15px 15px 0px 0px;
@@ -115,11 +155,24 @@ footer {
   padding-top: 22px;
   padding-bottom: 33px;
 }
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  padding-bottom: 7px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
 footer h1 {
   font-size: 18px;
   font-weight: lighter;
   line-height: 26px;
 }
-footer i {
+footer .fa-utensils {
+  padding-right: 15px;
+}
+footer .fa-handshake-angle {
   padding-right: 10px;
 }/*# sourceMappingURL=main.css.map */

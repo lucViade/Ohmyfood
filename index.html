@@ -28,9 +28,12 @@
     <nav>
         <h2>Fonctionnement</h2>
         <ul>
-            <li>1<i class="fa-sharp fa-solid fa-mobile-screen-button"></i><a>Choisissez un restaurant</a></li>
-            <li>2<i class="fa-sharp fa-solid fa-list"></i><a>Composez votre menu</a></li>
-            <li>3<i class="fa-sharp fa-solid fa-store"></i><a>Dégustez au restaurant</a></li>
+            <div class="number">1</div>
+            <li><i class="fa-sharp fa-solid fa-mobile-screen-button"></i><a>Choisissez un restaurant</a></li>
+            <div class="number">2</div>
+            <li><i class="fa-sharp fa-solid fa-list"></i><a>Composez votre menu</a></li>
+            <div class="number">3</div>
+            <li><i class="fa-sharp fa-solid fa-store"></i><a>Dégustez au restaurant</a></li>
         </ul>
     </nav>
     <main>
@@ -38,14 +41,17 @@
             <h2>Restaurants</h2>
             <div class="cards">
                 <div class="card">
-                    <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat du restaurant dans une assiette">
-                    <div class="card-content">
-                        <h3>La palette du goût</h3>
+                    <div class="new">Nouveau</div>
+                    <a href="assets/restaurants/la-palette-du-gout.html">
+                        <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat du restaurant dans une assiette">
+                        <div class="card-content">
+                            <h3>La palette du goût</h3>
+                        </a>
                         <i class="fa-regular fa-heart"></i>
                         <p>Ménilmontant</p>
-                    </div>
-                </div>
-                <div class="card">
+                        </div>
+                 </div>
+                 <div class="card">
                     <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'un plat du restaurant dans une assiette">
                     <div class="card-content">
                         <h3>La note enchantée</h3>
@@ -73,11 +79,13 @@
         </section>
     </main>
     <footer>
-        <h1>ohmyfood</h1>
-        <p><i class="fa-sharp fa-solid fa-utensils"></i>Proposer un restaurant</p>
-        <p><i class="fa-sharp fa-solid fa-handshake-angle"></i>Devinir partenaire</p>
-        <p>Mentions légales</p>
-        <p>Contact</p>
+        <ul>
+            <li><h1>ohmyfood</h1></li>
+            <li><a href=""><i class="fa-sharp fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+            <li><a href=""><i class="fa-sharp fa-solid fa-handshake-angle"></i>Devinir partenaire</a></li>
+            <li><a href="">Mentions légales</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
 
     </footer>
 </body>

@@ -8,29 +8,47 @@ body{
 
 .logo{
     text-align: center;
+    background-color: white;
+    padding-top: 14px;
+    padding-bottom: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
 }
 
 .location{
     background-color:#EAEAEA;
     text-align: center;
-    font-size: 16px;
-    line-height: 19px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    .fa-location-dot{
+        padding-right: 17px;
+    }
 }
 
 .head{
     text-align: center;
-    font-size: 16px;
+    padding-top: 39px;
+    padding-bottom: 57px;
     #target{
         font-size: 24px;
         font-weight: 700;
-        line-height: 22px;
+        padding-left: 42px;
+        padding-right: 53px;
+    }
+    p{
+        font-weight: 300;
+        font-size: 18px;
     }
     button{
         background: $colour-gradient;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
+        border: none;
         width: 218px;
         height: 50px;
+        color: white;
+        margin-top: 27px;
     }
 }
 
@@ -40,11 +58,22 @@ h1{
 
 nav{
     background: white;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
     height:440px;
+    padding-top: 48px;
+    padding-left: 20px;
+    .number{
+        position:relative;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        background: #9356DC;
+        color: white;
+        font-size: 14px;
+        border: 1px solid #9356DC;
+        border-radius: 100px;
+        top:45px;
+        right:10px;
+    }
     ul{
         padding-left: 20px;
         padding-right: 20px;
@@ -59,8 +88,8 @@ nav{
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
-         padding-top: 36px;
-         padding-bottom: 36px;
+         padding-top: 28px;
+         padding-bottom: 28px;
          margin-bottom: 25px;
         .fa-solid{
             padding-right: 27px;
@@ -70,6 +99,17 @@ nav{
 }
 .cards{
     padding: 0px 20px;
+    .new{
+        position: absolute;
+        text-align: center;
+        width:80px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        color:#008766;
+        background: #99E2D0;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+    }
     img{
         border-radius: 15px 15px 0px 0px;
         height: 231px;
@@ -115,12 +155,27 @@ footer{
     margin-top: 64px;
     padding-top: 22px;
     padding-bottom: 33px;
+    ul{
+        list-style-type: none;
+        
+        li{
+            padding-bottom: 7px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    
     h1{
         font-size: 18px;
         font-weight:lighter;
         line-height: 26px;
     }
-    i{
+    .fa-utensils{
+        padding-right: 15px;
+    }
+    .fa-handshake-angle{
         padding-right: 10px;
     }
 }
