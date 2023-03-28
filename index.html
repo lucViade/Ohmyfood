@@ -22,7 +22,7 @@
         <div class="head">
             <p id="target">Réservez le menu qui vous convient</p>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button>Explorez nos restaurants</button>
+            <button class="btn-cmd">Explorez nos restaurants</button>
         </div>
     </header>
     <nav>
@@ -41,29 +41,43 @@
             <h2>Restaurants</h2>
             <div class="cards">
                 <div class="card">
-                    <div class="new">Nouveau</div>
-                    <a href="assets/restaurants/la-palette-du-gout.html">
+                    <a class="image" href="assets/restaurants/la-palette-du-gout.html">
+                        <div class="new"><p>Nouveau</p></div>
                         <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat du restaurant dans une assiette">
                         <div class="card-content">
                             <h3>La palette du goût</h3>
                         </a>
-                        <i class="fa-regular fa-heart"></i>
+                        <button class="btn-heart">
+                            <i class="fa-regular fa-heart fa-2x empty-heart"></i>
+                        </button>
                         <p>Ménilmontant</p>
-                        </div>
+                    </div>
+
+                            
                  </div>
                  <div class="card">
+                    <a class="image" href="">
+                    <div class="new"><p>Nouveau</p></div>
                     <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'un plat du restaurant dans une assiette">
+                    </a>
                     <div class="card-content">
                         <h3>La note enchantée</h3>
-                        <i class="fa-regular fa-heart"></i>
-                        <p>Charonne</p>
+                        <button class="btn-heart">
+                            <i class="fa-regular fa-heart fa-2x empty-heart"></i>
+                        </button>
+                         <p>Charonne</p>
                     </div>
                 </div>
                 <div class="card">
+                    <a href="menu/A-la-francaise.html">
                     <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat du restaurant dans une assiette">
                     <div class="card-content">
                         <h3>À la française</h3>
-                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                        
+                        <button class="btn-heart">
+                            <i class="fa-regular fa-heart fa-2x empty-heart"></i>
+                        </button>
                         <p>Cité Rouge</p>
                     </div>
                 </div>
@@ -71,7 +85,9 @@
                     <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat du restaurant dans une assiette">
                     <div class="card-content">
                         <h3>Le délice des sens</h3>
-                        <i class="fa-regular fa-heart"></i>
+                        <button class="btn-heart">
+                            <i class="fa-regular fa-heart fa-2x empty-heart"></i>
+                        </button>
                         <p>Folie-Méricourt</p>
                     </div>
                 </div>
@@ -80,11 +96,12 @@
     </main>
     <footer>
         <ul>
-            <li><h1>ohmyfood</h1></li>
+            <li><h1 class="lg-phone">ohmyfood</h1></li>
             <li><a href=""><i class="fa-sharp fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
             <li><a href=""><i class="fa-sharp fa-solid fa-handshake-angle"></i>Devinir partenaire</a></li>
             <li><a href="">Mentions légales</a></li>
             <li><a href="">Contact</a></li>
+            <li><h1 class="lg-desktop">ohmyfood</h1></li>
         </ul>
 
     </footer>
