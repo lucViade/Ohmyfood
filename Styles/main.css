@@ -91,6 +91,7 @@ nav ul {
   padding-left: 20px;
   padding-right: 20px;
   list-style: none;
+  justify-content: center;
 }
 nav li {
   background: #F7F7F7;
@@ -263,6 +264,10 @@ footer .fa-handshake-angle {
   nav {
     height: 262px;
   }
+  nav h2 {
+    position: relative;
+    left: 157px;
+  }
   nav .number {
     left: 10px;
     top: 30px;
@@ -274,6 +279,10 @@ footer .fa-handshake-angle {
   nav ul li {
     width: 322px;
     margin-right: 36px;
+  }
+  .restaurants h2 {
+    position: relative;
+    left: 157px;
   }
   .cards {
     padding-left: 176px;
@@ -361,7 +370,7 @@ footer .fa-handshake-angle {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   max-width: 100%;
-  animation: scale-effect 1s;
+  animation: scale-effect 1s ease-in-out 1s;
 }
 .list-menu .content-menu {
   white-space: nowrap;
@@ -375,7 +384,7 @@ footer .fa-handshake-angle {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  animation: translate-effect 3.5s;
+  animation: translate-effect 3.5s ease-in-out 1s;
 }
 .list-menu .complement {
   font-weight: 300;
@@ -383,7 +392,7 @@ footer .fa-handshake-angle {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  animation: translate-effect 3s;
+  animation: translate-effect 3s ease-in-out 1s;
 }
 .list-menu .price {
   font-weight: bold;
@@ -391,6 +400,7 @@ footer .fa-handshake-angle {
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 0.5rem;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 .list-menu .btn-check {
   background-color: #99E2D0;
@@ -458,5 +468,84 @@ footer .fa-handshake-angle {
   }
   to {
     transform: scaleY(100%);
+  }
+}
+/**LOADER**/
+#loader {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000;
+  animation: loading 3s forwards;
+  justify-content: center;
+}
+
+.bubble {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 10px;
+  border: 2px solid #9356DC;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble:nth-child(1), .bubble:nth-child(5) {
+  animation: bubble 1.2s ease-in-out infinite;
+}
+
+.bubble:nth-child(2), .bubble:nth-child(6) {
+  animation: bubble 1.4s ease-in-out infinite;
+}
+
+.bubble:nth-child(3), .bubble:nth-child(7) {
+  animation: bubble 1.6s ease-in-out infinite;
+}
+
+.bubble:nth-child(4), .bubble:nth-child(8) {
+  animation: bubble 1.8s ease-in-out infinite;
+}
+
+.mint {
+  background-color: #99E2D0;
+}
+
+.pink {
+  background-color: #ff79da;
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(0.15, 0.15);
+    top: 50%;
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.33, 0.33);
+    top: 30%;
+    opacity: 0;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
   }
 }/*# sourceMappingURL=main.css.map */
