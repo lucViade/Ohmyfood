@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   max-width: 1440px;
+  margin: auto;
   box-sizing: border-box;
 }
 
@@ -93,7 +94,7 @@ nav ul {
   list-style: none;
   justify-content: center;
 }
-nav li {
+nav .consigne {
   background: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
@@ -106,10 +107,10 @@ nav li {
   padding-bottom: 28px;
   margin-bottom: 25px;
 }
-nav li:hover {
+nav .consigne:hover {
   background: #F5EDFF;
 }
-nav li:hover .fa-solid {
+nav .consigne:hover .fa-solid {
   color: #9356DC;
 }
 nav .fa-solid {
@@ -269,7 +270,7 @@ footer .fa-handshake-angle {
     left: 157px;
   }
   nav .number {
-    left: 10px;
+    left: 42px;
     top: 30px;
   }
   nav ul {
@@ -307,6 +308,16 @@ footer .fa-handshake-angle {
     padding-right: 40px;
   }
   /******* pages menu responsive 1024*****/
+  nav ul {
+    padding-left: 106px;
+    padding-right: 126px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  nav .fa-solid {
+    padding-left: 15px;
+  }
   .menu-container {
     max-width: 1005px;
     margin: auto;
@@ -361,6 +372,58 @@ footer .fa-handshake-angle {
   margin: 0px;
 }
 
+.delay-1 {
+  animation: translate-effect 0.4s ease-in-out 1s both;
+}
+
+.time-1 {
+  animation: translate-effect 0.6s ease-in-out 1s both;
+}
+
+.time-2 {
+  animation: translate-effect 0.8s ease-in-out 1s both;
+}
+
+.time-3 {
+  animation: translate-effect 1s ease-in-out 1s both;
+}
+
+.delay-2 {
+  animation: translate-effect 1.2s ease-in-out 1s both;
+}
+
+.time-4 {
+  animation: translate-effect 1.4s ease-in-out 1s both;
+}
+
+.time-5 {
+  animation: translate-effect 1.6s ease-in-out 1s both;
+}
+
+.time-6 {
+  animation: translate-effect 1.8s ease-in-out 1s both;
+}
+
+.delay-3 {
+  animation: translate-effect 2s ease-in-out 1s both;
+}
+
+.time-7 {
+  animation: translate-effect 2.2s ease-in-out 1s both;
+}
+
+.time-8 {
+  animation: translate-effect 2.4s ease-in-out 1s both;
+}
+
+.time-9 {
+  animation: translate-effect 2.6s ease-in-out 1s both;
+}
+
+.time-10 {
+  animation: translate-effect 2.8s ease-in-out 1s both;
+}
+
 .list-menu {
   background-color: white;
   padding: 1rem;
@@ -370,7 +433,6 @@ footer .fa-handshake-angle {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   max-width: 100%;
-  animation: scale-effect 1s ease-in-out 1s;
 }
 .list-menu .content-menu {
   white-space: nowrap;
@@ -384,7 +446,6 @@ footer .fa-handshake-angle {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  animation: translate-effect 3.5s ease-in-out 1s;
 }
 .list-menu .complement {
   font-weight: 300;
@@ -392,7 +453,6 @@ footer .fa-handshake-angle {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  animation: translate-effect 3s ease-in-out 1s;
 }
 .list-menu .price {
   font-weight: bold;
@@ -400,7 +460,6 @@ footer .fa-handshake-angle {
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 0.5rem;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 .list-menu .btn-check {
   background-color: #99E2D0;
@@ -456,18 +515,12 @@ footer .fa-handshake-angle {
 /**** animations ****/
 @keyframes translate-effect {
   from {
+    opacity: 0;
     transform: translateY(100%);
   }
   to {
+    opacity: 1;
     transform: translateY(0%);
-  }
-}
-@keyframes scale-effect {
-  from {
-    transform: scaleY(0%);
-  }
-  to {
-    transform: scaleY(100%);
   }
 }
 /**LOADER**/
@@ -490,9 +543,9 @@ footer .fa-handshake-angle {
   font-size: 30px;
   margin: 10px;
   border: 2px solid #9356DC;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
   position: relative;
   text-align: center;
   display: flex;
@@ -501,7 +554,7 @@ footer .fa-handshake-angle {
 }
 
 .bubble:nth-child(1), .bubble:nth-child(5) {
-  animation: bubble 1.2s ease-in-out infinite;
+  animation: bubble 1s ease-in-out infinite;
 }
 
 .bubble:nth-child(2), .bubble:nth-child(6) {
@@ -513,7 +566,7 @@ footer .fa-handshake-angle {
 }
 
 .bubble:nth-child(4), .bubble:nth-child(8) {
-  animation: bubble 1.8s ease-in-out infinite;
+  animation: bubble 1s ease-in-out infinite;
 }
 
 .mint {
