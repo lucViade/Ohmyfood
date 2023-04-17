@@ -309,12 +309,22 @@ footer {
 
             display: flex;
             flex-direction: row;
+            padding-left: 106px;
+            padding-right: 126px;
+             white-space: nowrap;
+             overflow: hidden;
+            text-overflow: ellipsis;
 
             li {
                 width: 322px;
                 margin-right: 36px;
             }
         }
+    
+         .fa-solid{
+            padding-left: 15px;
+         }
+    }
     }
     .restaurants {
         h2 {
@@ -347,18 +357,7 @@ footer {
         }
     }
     /******* pages menu responsive 1024*****/
-    nav{
-        ul{
-            padding-left: 106px;
-            padding-right: 126px;
-             white-space: nowrap;
-             overflow: hidden;
-            text-overflow: ellipsis;
-         }
-         .fa-solid{
-            padding-left: 15px;
-         }
-    }
+    
     .menu-container{
         max-width: 1005px;
         margin: auto;
@@ -368,7 +367,6 @@ footer {
         }
     }
     
-}
 
 /******* pages menu ******/
 .menu-header{
@@ -572,6 +570,7 @@ footer {
     background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     margin: 0 auto;
     top: 0;
+    max-width: 1440px;
     width: 100%;
     height: 100%;
     position: fixed;
