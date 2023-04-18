@@ -1,0 +1,182 @@
+/******* pages menu ******/
+.menu-header{
+    display: flex;
+    .title{
+        font-size: 28px;
+    }
+    .btn-heart{
+        background-color: #F6F6F6;
+        position: absolute;
+        top: 28px;
+        right: 57px;
+        padding: 0px;
+
+    }
+}
+.menu-container{
+    background-color: #F6F6F6;
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    top:-60px;
+    z-index: 2; 
+    margin-bottom: -60px;
+    padding-bottom: 40px;
+    padding-left:17px;
+    padding-right: 17px;
+}
+
+.picture{
+    img{
+        width: 100%;
+        height: 275px;
+        position: relative;
+        z-index: 1;
+        object-fit: cover;
+     }
+    
+}
+
+
+.top{
+    .underline{
+        border: 2px solid $tertiary-color;
+        width: 40px;
+        margin-top: 8px;
+    }
+        p{
+            margin: 0px;
+        }
+
+}
+.delay-1{
+    animation: translate-effect 0.4s ease-in-out 1s both;
+}
+.time-1{
+    animation: translate-effect 0.6s ease-in-out 1s both; 
+}
+.time-2{
+    animation: translate-effect 0.8s ease-in-out 1s both; 
+}
+.time-3{
+    animation: translate-effect 1s ease-in-out 1s both;
+}
+.delay-2{
+    animation: translate-effect 1.2s ease-in-out 1s both;   
+}
+.time-4{
+    animation: translate-effect 1.4s ease-in-out 1s both;
+}
+.time-5{
+    animation: translate-effect 1.6s ease-in-out 1s both;
+}
+.time-6{
+    animation: translate-effect 1.8s ease-in-out 1s both;
+}
+.delay-3{
+    animation: translate-effect 2s ease-in-out 1s both;
+}
+.time-7{
+    animation: translate-effect 2.2s ease-in-out 1s both;
+}
+.time-8{
+    animation: translate-effect 2.4s ease-in-out 1s both;
+}
+.time-9{
+    animation: translate-effect 2.6s ease-in-out 1s both;
+}
+
+.time-10{
+    animation: translate-effect 2.8s ease-in-out 1s both;
+}
+
+.list-menu{
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 100%;
+    
+    
+    .content-menu{
+     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+    }
+    .food{
+        font-weight: bold;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; 
+        
+    }
+    .complement{
+        font-weight: 300;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .price{
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 0.5rem;
+    }
+    .btn-check{
+        background-color: #99E2D0;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.5s;
+    }
+    &:hover .btn-check{
+        margin-right: -1rem;
+    }
+    .icon{
+        height: 1.6rem;
+        width: 1.6rem;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition: transform 0.5s;
+        .fa-circle-check{
+        color: white;
+         -webkit-background-clip: text;
+          background-clip: text;
+        font-weight: bold;
+        font-size: large;
+    }
+    }
+    &:hover .icon{
+        transform: rotate(0deg);
+    }
+}
+    .cmd{
+        text-align: center;
+        .btn-cmd {
+            background: $colour-gradient;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 25px;
+            border: none;
+            width: 218px;
+            height: 50px;
+            color: white;
+            margin-top: 27px;
+            
+            
+            &:hover{
+                background: $colour-light-gradient;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+            }
+        }
+}

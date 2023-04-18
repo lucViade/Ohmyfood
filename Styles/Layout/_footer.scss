@@ -1,0 +1,39 @@
+footer {
+    background: #353535;
+    color: white;
+    padding-left: 25px;
+    padding-top: 22px;
+    position: relative;
+    z-index: 3;
+
+    ul {
+        list-style-type: none;
+
+        .lg-desktop {
+            opacity: 0;
+        }
+
+        li {
+            padding-bottom: 7px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 26px;
+    }
+
+    .fa-utensils {
+        padding-right: 15px;
+    }
+
+    .fa-handshake-angle {
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,17 @@
+.btn-heart {
+    border: none;
+    background-color: white;
+    
+    .empty-heart{
+        background: black;
+        position: absolute;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+    }
+    &:hover .empty-heart{
+        background-image: linear-gradient($primary-color, $secondary-color);
+        font-weight: bold;
+        transform: scale(1.1);
+        transition-duration: 1s;
+    }
+}

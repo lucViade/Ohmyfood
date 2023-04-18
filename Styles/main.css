@@ -6,7 +6,11 @@ body {
   box-sizing: border-box;
 }
 
-/*******page accueil******/
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+/****header****/
 .logo {
   text-align: center;
   justify-content: center;
@@ -65,10 +69,7 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
-h1 {
-  font-family: "Shrikhand", cursive;
-}
-
+/******* nav ******/
 nav {
   background: white;
   height: 440px;
@@ -119,6 +120,7 @@ nav .fa-solid {
   font-size: 18px;
 }
 
+/***** main *****/
 .restaurants {
   background-color: #F6F6F6;
   padding-bottom: 64px;
@@ -514,17 +516,6 @@ footer li {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
-/**** animations ****/
-@keyframes translate-effect {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
 /**LOADER**/
 #loader {
   font-family: "Shrikhand", cursive;
@@ -577,9 +568,20 @@ footer li {
 }
 
 .pink {
-  background-color: #ff79da;
+  background-color: #FF79DA;
 }
 
+/**** animations ****/
+@keyframes translate-effect {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 @keyframes bubble {
   0% {
     transform: scale(0.15, 0.15);

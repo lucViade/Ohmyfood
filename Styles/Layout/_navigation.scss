@@ -1,0 +1,55 @@
+/******* nav ******/
+nav {
+    background: white;
+    height: 440px;
+    padding-top: 48px;
+    padding-left: 20px;
+
+    .number {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        background: $primary-color;
+        color: white;
+        font-size: 14px;
+        border: 1px solid $primary-color;
+        border-radius: 100px;
+        top: 45px;
+        right: 10px;
+    }
+
+    ul {
+        padding-left: 20px;
+        padding-right: 20px;
+        list-style: none;
+        justify-content: center;
+    }
+
+    .consigne {
+        background: #F7F7F7;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        margin-bottom: 25px;
+
+        &:hover {
+            background: #F5EDFF;
+            .fa-solid{
+                    color:$primary-color;
+                }
+            }
+        }
+            
+            .fa-solid {
+                padding-right: 27px;
+                color: #7E7E7E;
+                font-size: 18px;
+            }
+        }
