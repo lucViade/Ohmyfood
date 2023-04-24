@@ -1,14 +1,14 @@
 @import "./Utils/_Variables.scss";
+@import "./Utils/_keyframes.scss";
 @import "./Base/_typography.scss";
 @import "./Layout/_header.scss";
-@import "./Layout/navigation";
-@import "./Layout/section";
-@import "./Composants/button-heart";
-@import "./Layout/footer";
-@import "./Base/responsive";
-@import "./Pages/menus";
-@import "./Pages/loader";
-@import "./Utils/_keyframes.scss";
+@import "./Layout/navigation.scss";
+@import "./Layout/section.scss";
+@import "./Layout/footer.scss";
+@import "./Composants/button-heart.scss";
+@import "./Base/responsive.scss";
+@import "./Pages/menus.scss";
+@import "./Pages/loader.scss";
 
 
 

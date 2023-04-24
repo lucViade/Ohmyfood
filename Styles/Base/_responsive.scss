@@ -61,33 +61,32 @@
             padding-left: 15px;
          }
     }
-    }
     .restaurants {
         h2 {
             position: relative;
             left: 157px;
         }
     }
-.cards{
-    padding-left: 176px;
-    padding-right: 176px;
-    row-gap: 50px;
-    column-gap: 92px;
-}
-/******* for all pages responsive 1024********/
+    .cards{
+        padding-left: 176px;
+        padding-right: 176px;
+        row-gap: 50px;
+        column-gap: 92px;
+    }
+    /******* for all pages responsive 1024********/
     footer {
         ul {
             display: flex;
             justify-content: end;
             align-items: center;
-             .lg-phone {
+            .lg-phone {
                 opacity: 0;
             }
             .lg-desktop{
                 opacity: 1;
             }
         }
-
+        
         li {
             padding-right: 40px;
         }
@@ -102,3 +101,4 @@
             margin: auto;
         }
     }
+}

@@ -1,3 +1,39 @@
+/**** animations ****/
+@keyframes translate-effect {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes bubble {
+  0% {
+    transform: scale(0.15, 0.15);
+    top: 50%;
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.33, 0.33);
+    top: 30%;
+    opacity: 0;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -187,24 +223,6 @@ nav .fa-solid {
   font-weight: 300;
 }
 
-.btn-heart {
-  border: none;
-  background-color: white;
-}
-.btn-heart .empty-heart {
-  background: black;
-  position: absolute;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.btn-heart:hover .empty-heart {
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  font-weight: bold;
-  transform: scale(1.1);
-  transition-duration: 1s;
-}
-
 footer {
   background: #353535;
   color: white;
@@ -236,6 +254,24 @@ footer .fa-utensils {
 }
 footer .fa-handshake-angle {
   padding-right: 10px;
+}
+
+.btn-heart {
+  border: none;
+  background-color: white;
+}
+.btn-heart .empty-heart {
+  background: black;
+  position: absolute;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-heart:hover .empty-heart {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  font-weight: bold;
+  transform: scale(1.1);
+  transition-duration: 1s;
 }
 
 /******* responsive 768px  *********/
@@ -291,46 +327,42 @@ footer .fa-handshake-angle {
   nav .fa-solid {
     padding-left: 15px;
   }
+  .restaurants h2 {
+    position: relative;
+    left: 157px;
+  }
+  .cards {
+    padding-left: 176px;
+    padding-right: 176px;
+    row-gap: 50px;
+    -moz-column-gap: 92px;
+         column-gap: 92px;
+  }
+  /******* for all pages responsive 1024********/
+  footer ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  footer ul .lg-phone {
+    opacity: 0;
+  }
+  footer ul .lg-desktop {
+    opacity: 1;
+  }
+  footer li {
+    padding-right: 40px;
+  }
+  /******* pages menu responsive 1024*****/
+  .menu-container {
+    max-width: 1005px;
+    margin: auto;
+  }
+  .menu-container .choice {
+    max-width: 634px;
+    margin: auto;
+  }
 }
-.restaurants h2 {
-  position: relative;
-  left: 157px;
-}
-
-.cards {
-  padding-left: 176px;
-  padding-right: 176px;
-  row-gap: 50px;
-  -moz-column-gap: 92px;
-       column-gap: 92px;
-}
-
-/******* for all pages responsive 1024********/
-footer ul {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-footer ul .lg-phone {
-  opacity: 0;
-}
-footer ul .lg-desktop {
-  opacity: 1;
-}
-footer li {
-  padding-right: 40px;
-}
-
-/******* pages menu responsive 1024*****/
-.menu-container {
-  max-width: 1005px;
-  margin: auto;
-}
-.menu-container .choice {
-  max-width: 634px;
-  margin: auto;
-}
-
 /******* pages menu ******/
 .menu-header {
   display: flex;
@@ -569,41 +601,4 @@ footer li {
 
 .pink {
   background-color: #FF79DA;
-}
-
-/**** animations ****/
-@keyframes translate-effect {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-@keyframes bubble {
-  0% {
-    transform: scale(0.15, 0.15);
-    top: 50%;
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.1, 1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.33, 0.33);
-    top: 30%;
-    opacity: 0;
-  }
-}
-@keyframes loading {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
 }/*# sourceMappingURL=main.css.map */
