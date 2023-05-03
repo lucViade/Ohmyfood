@@ -1,38 +1,40 @@
 /******* responsive 768px  *********/
 @media screen and (min-width:768px) {
+
     /***** page accueil responsive 768****/
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
-    .card{
-        .image{
+
+    .card {
+        .image {
             right: 0;
         }
     }
+
     /****** page menu responsive 768*******/
-.menu-container{
-    max-width: 450px;
-    margin: auto;
-}
-    .menu-header{
-        justify-content: center;
-         .btn-heart {
-        left: 330px;
+    .menu-container {
+        max-width: 450px;
+        margin: auto;
     }
-    
+
+    .menu-header {
+        justify-content: center;
+    }
 }
-}  
 
 /****responsive 1024px ********/
 @media screen and (min-width:1024px) {
+
     /****** page accueil responsive 1024******/
     nav {
         height: 262px;
-        h2{
+
+        h2 {
             position: relative;
-            left:157px;
+            left: 157px;
         }
 
         .number {
@@ -47,58 +49,64 @@
             flex-direction: row;
             padding-left: 106px;
             padding-right: 126px;
-             white-space: nowrap;
-             overflow: hidden;
-            text-overflow: ellipsis;
+
 
             li {
                 width: 322px;
                 margin-right: 36px;
+                white-space: nowrap;
             }
         }
-    
-         .fa-solid{
-            padding-left: 15px;
-         }
     }
+
     .restaurants {
         h2 {
             position: relative;
             left: 157px;
         }
     }
-    .cards{
+
+    .cards {
         padding-left: 176px;
         padding-right: 176px;
         row-gap: 50px;
         column-gap: 92px;
     }
+
     /******* for all pages responsive 1024********/
     footer {
         ul {
             display: flex;
             justify-content: end;
             align-items: center;
+
             .lg-phone {
                 opacity: 0;
             }
-            .lg-desktop{
+
+            .lg-desktop {
                 opacity: 1;
             }
         }
-        
+
         li {
             padding-right: 40px;
         }
     }
+
     /******* pages menu responsive 1024*****/
-    
-    .menu-container{
+
+    .menu-container {
         max-width: 1005px;
         margin: auto;
-        .choice{
+
+        .choice {
             max-width: 634px;
             margin: auto;
+        }
+
+        .btn-heart {
+            margin-right: 300px;
         }
     }
 }

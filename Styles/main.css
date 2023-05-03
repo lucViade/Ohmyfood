@@ -135,24 +135,25 @@ nav .consigne {
   background: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  text-align: center;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  padding-left: 34px;
   padding-top: 28px;
   padding-bottom: 28px;
   margin-bottom: 25px;
+  max-width: 322px;
 }
-nav .consigne:hover {
-  background: #F5EDFF;
-}
-nav .consigne:hover .fa-solid {
-  color: #9356DC;
-}
-nav .fa-solid {
+nav .consigne .fa-mobile-screen-button {
   padding-right: 27px;
-  color: #7E7E7E;
+}
+nav .consigne .fa-list {
+  padding-right: 23px;
+}
+nav .consigne .fa-store {
+  padding-right: 20px;
+  color: #9356DC;
   font-size: 18px;
 }
 
@@ -177,6 +178,8 @@ nav .fa-solid {
   border-radius: 15px 15px 0px 0px;
   height: 231px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card {
@@ -266,12 +269,15 @@ footer .fa-handshake-angle {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition-duration: 1.5s;
 }
 .btn-heart:hover .empty-heart {
   background-image: linear-gradient(#9356DC, #FF79DA);
   font-weight: bold;
+  transition-delay: 0.3s;
+  transition-timing-function: ease-out;
+  transform-origin: top;
   transform: scale(1.1);
-  transition-duration: 1s;
 }
 
 /******* responsive 768px  *********/
@@ -293,9 +299,6 @@ footer .fa-handshake-angle {
   .menu-header {
     justify-content: center;
   }
-  .menu-header .btn-heart {
-    left: 330px;
-  }
 }
 /****responsive 1024px ********/
 @media screen and (min-width: 1024px) {
@@ -316,16 +319,11 @@ footer .fa-handshake-angle {
     flex-direction: row;
     padding-left: 106px;
     padding-right: 126px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   nav ul li {
     width: 322px;
     margin-right: 36px;
-  }
-  nav .fa-solid {
-    padding-left: 15px;
+    white-space: nowrap;
   }
   .restaurants h2 {
     position: relative;
@@ -361,6 +359,9 @@ footer .fa-handshake-angle {
   .menu-container .choice {
     max-width: 634px;
     margin: auto;
+  }
+  .menu-container .btn-heart {
+    margin-right: 300px;
   }
 }
 /******* pages menu ******/
