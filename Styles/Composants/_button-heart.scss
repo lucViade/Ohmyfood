@@ -3,19 +3,41 @@
     background-color: white;
     
     .empty-heart{
-        background: black;
+        background-color: black;
         position: absolute;
         background-clip: text;
         -webkit-text-fill-color:transparent;
+        /*transition:all 1.5s;*/
+        transform-origin: left;
         transition-duration: 1.5s;
-        
+
+        &:hover {
+            animation: heart 1000ms;
+            background-image: linear-gradient($primary-color, $secondary-color);
+            font-weight: bold;
+            transform: scale(1.1);
+        }
     }
-    &:hover .empty-heart{
-        background-image: linear-gradient($primary-color, $secondary-color);
-        font-weight: bold;
-        transition-delay: 0.3s;
-        transition-timing-function: ease-out;
-        transform-origin: top;
-        transform: scale(1.1);
+
+    @keyframes heart {
+        0% {
+            background-image: linear-gradient($primary-color, $secondary-color);
+            background-color: black;
+            position: absolute;
+            background-clip: text;
+            -webkit-text-fill-color:transparent;
+            /*transition:all 1.5s;*/
+            transform-origin: left;
+            font-weight: bold;
+            transform: scale(1);
+            opacity: 0;
+        }
+
+
+        100% {
+            opacity: 1;
+            transform: scale(1.1);
+        }
     }
+
 }

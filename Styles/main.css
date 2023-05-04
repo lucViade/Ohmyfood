@@ -264,20 +264,39 @@ footer .fa-handshake-angle {
   background-color: white;
 }
 .btn-heart .empty-heart {
-  background: black;
+  background-color: black;
   position: absolute;
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  /*transition:all 1.5s;*/
+  transform-origin: left;
   transition-duration: 1.5s;
 }
-.btn-heart:hover .empty-heart {
+.btn-heart .empty-heart:hover {
+  animation: heart 1000ms;
   background-image: linear-gradient(#9356DC, #FF79DA);
   font-weight: bold;
-  transition-delay: 0.3s;
-  transition-timing-function: ease-out;
-  transform-origin: top;
   transform: scale(1.1);
+}
+@keyframes heart {
+  0% {
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-color: black;
+    position: absolute;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*transition:all 1.5s;*/
+    transform-origin: left;
+    font-weight: bold;
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 
 /******* responsive 768px  *********/
